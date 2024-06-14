@@ -9,6 +9,8 @@ import Css from "./icons/Css.astro";
 import Javascript from "./icons/Javascript.astro";
 import Angular from "./icons/Angular.astro";
 import Firebase from "./icons/Firebase.astro";
+import PHP from "./icons/PHP.astro";
+import Boostrap from "./icons/Boostrap.astro";
 
 // TODO: poner bien el link de angular
 const TAGS = {
@@ -47,8 +49,27 @@ const TAGS = {
     class: "bg-[#ffcb2b] text-black",
     icon: Firebase,
   },
+  PHP: {
+    name: "PHP",
+    class: "bg-[#777BB4] text-white",
+    icon: PHP,
+  },
+  BOOSTRAP: {
+    name: "Bootstrap",
+    class: "bg-[#7952B3] text-white",
+    icon: Boostrap,
+  },
 };
 const PROJECTS = [
+  {
+    title: "Projecto regularización",
+    description:
+      "Projecto para el ayuntamiento de Tonalá. Donde los funcionarios subirian y darian seguimiento de archivos. Con base de datos relacional SQL. Creada con HTML, CSS, PHP y Bootstrap.",
+    // link: "ff",
+    github: "https://github.com/Erick-Hernandez-Ortega/Proyecto-Regularizacion",
+    image: "/projects/regularizacion.webp",
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.PHP, TAGS.BOOSTRAP],
+  },
   {
     title: "Página de departamento Angular",
     description:
