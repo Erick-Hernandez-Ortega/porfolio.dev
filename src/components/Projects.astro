@@ -11,6 +11,8 @@ import Angular from "./icons/Angular.astro";
 import Firebase from "./icons/Firebase.astro";
 import PHP from "./icons/PHP.astro";
 import Boostrap from "./icons/Boostrap.astro";
+import React from "./icons/React.astro";
+import ReactNative from "./icons/ReactNative.astro";
 
 // TODO: poner bien el link de angular
 const TAGS = {
@@ -59,8 +61,27 @@ const TAGS = {
     class: "bg-[#7952B3] text-white",
     icon: Boostrap,
   },
+  REACT: {
+    name: "React",
+    class: "bg-[#61DBFB] text-black",
+    icon: React,
+  },
+  REACT_NATIVE: {
+    name: "React Native",
+    class: "bg-[#61DBFB] text-black",
+    icon: ReactNative,
+  },
 };
 const PROJECTS = [
+  {
+    title: "Adogtame",
+    description:
+      "Projecto personal y académico: app móvil y web para la adopción de mascotas, con base de datos no relacional. Creada con React Native, React, Firebase y Expo.",
+    // link: "ff",
+    github: "https://github.com/Erick-Hernandez-Ortega/Adogtame",
+    image: "/projects/adogtame.webp",
+    tags: [TAGS.FIREBASE, TAGS.REACT, TAGS.REACT_NATIVE],
+  },
   {
     title: "Projecto regularización",
     description:
