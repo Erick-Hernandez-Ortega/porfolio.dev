@@ -13,6 +13,7 @@ import PHP from "./icons/PHP.astro";
 import Boostrap from "./icons/Boostrap.astro";
 import React from "./icons/React.astro";
 import ReactNative from "./icons/ReactNative.astro";
+import Typescript from "./icons/Typescript.astro";
 
 // TODO: poner bien el link de angular
 const TAGS = {
@@ -71,8 +72,22 @@ const TAGS = {
     class: "bg-[#61DBFB] text-black",
     icon: ReactNative,
   },
+  TYPESCRIPT: {
+    name: "Typescript",
+    class: "bg-[#007acc] text-white",
+    icon: Typescript,
+  },
 };
 const PROJECTS = [
+  {
+    title: "AbastoTotal",
+    description:
+      "AbastoTotal es un software de gestión para abarrotes, desarrollado con Angular, Firebase y Bootstrap. Facilita la administración de inventarios, ventas y proveedores, proporcionando una solución eficiente y centralizada. Utiliza Angular para una interfaz dinámica, Firebase para almacenamiento de datos y autenticación, y Bootstrap para un diseño móvil-responsivo.",
+    // link: "ff",
+    github: "https://github.com/Erick-Hernandez-Ortega/AbastoTotal",
+    image: "/projects/abastototal.webp",
+    tags: [TAGS.FIREBASE, TAGS.REACT, TAGS.REACT_NATIVE, TAGS.TYPESCRIPT],
+  },
   {
     title: "Adogtame",
     description:
@@ -80,7 +95,7 @@ const PROJECTS = [
     // link: "ff",
     github: "https://github.com/Erick-Hernandez-Ortega/Adogtame",
     image: "/projects/adogtame.webp",
-    tags: [TAGS.FIREBASE, TAGS.REACT, TAGS.REACT_NATIVE],
+    tags: [TAGS.FIREBASE, TAGS.REACT, TAGS.REACT_NATIVE, TAGS.JAVASCRIPT],
   },
   {
     title: "Projecto regularización",
@@ -98,7 +113,7 @@ const PROJECTS = [
     link: "ff",
     github: "https://github.com/Erick-Hernandez-Ortega/Pagina-Departemanto-Angular",
     image: "/projects/pagina-departamento.webp",
-    tags: [TAGS.ANGULAR, TAGS.FIREBASE],
+    tags: [TAGS.ANGULAR, TAGS.FIREBASE, TAGS.TYPESCRIPT],
   },
   {
     title: "Página de departamento",
