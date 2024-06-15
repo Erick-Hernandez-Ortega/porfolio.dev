@@ -14,6 +14,7 @@ import Boostrap from "./icons/Boostrap.astro";
 import React from "./icons/React.astro";
 import ReactNative from "./icons/ReactNative.astro";
 import Typescript from "./icons/Typescript.astro";
+import Sql from "./icons/Sql.astro";
 
 // TODO: poner bien el link de angular
 const TAGS = {
@@ -77,6 +78,11 @@ const TAGS = {
     class: "bg-[#007acc] text-white",
     icon: Typescript,
   },
+  SQL: {
+    name: "SQL",
+    class: "bg-[#007acc] text-white",
+    icon: Sql,
+  },
 };
 const PROJECTS = [
   {
@@ -92,7 +98,7 @@ const PROJECTS = [
     title: "AbastoTotal",
     description:
       "AbastoTotal es un software de gestión para abarrotes, desarrollado con Angular, Firebase y Bootstrap. Facilita la administración de inventarios, ventas y proveedores, proporcionando una solución eficiente y centralizada. Utiliza Angular para una interfaz dinámica, Firebase para almacenamiento de datos y autenticación, y Bootstrap para un diseño móvil-responsivo.",
-    // link: "ff",
+    link: "https://erick-hernandez-ortega.me/abastototal/",
     github: "https://github.com/Erick-Hernandez-Ortega/AbastoTotal",
     image: "/projects/abastototal.webp",
     tags: [TAGS.FIREBASE, TAGS.REACT, TAGS.REACT_NATIVE, TAGS.TYPESCRIPT],
@@ -110,16 +116,16 @@ const PROJECTS = [
     title: "Projecto regularización",
     description:
       "Projecto para el ayuntamiento de Tonalá. Donde los funcionarios subirian y darian seguimiento de archivos. Con base de datos relacional SQL. Creada con HTML, CSS, PHP y Bootstrap.",
-    // link: "ff",
+    link: "https://erick-hernandez-ortega.me/Proyecto-Regularizacion/login.php",
     github: "https://github.com/Erick-Hernandez-Ortega/Proyecto-Regularizacion",
     image: "/projects/regularizacion.webp",
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.PHP, TAGS.BOOSTRAP],
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.PHP, TAGS.BOOSTRAP, TAGS.SQL],
   },
   {
     title: "Página de departamento Angular",
     description:
       "Plataforma hecha para el departamento de Ingeniería de ciencias computacionales de CUTonalá. Dinamica con base de datos no relacional. Creada con Angular y Firebase.",
-    link: "ff",
+    // link: "ff",
     github: "https://github.com/Erick-Hernandez-Ortega/Pagina-Departemanto-Angular",
     image: "/projects/pagina-departamento.webp",
     tags: [TAGS.ANGULAR, TAGS.FIREBASE, TAGS.TYPESCRIPT],
