@@ -15,6 +15,7 @@ import React from "./icons/React.astro";
 import ReactNative from "./icons/ReactNative.astro";
 import Typescript from "./icons/Typescript.astro";
 import Sql from "./icons/Sql.astro";
+import Vue from "./icons/Vue.astro";
 
 // TODO: poner bien el link de angular
 const TAGS = {
@@ -83,8 +84,22 @@ const TAGS = {
     class: "bg-[#007acc] text-white",
     icon: Sql,
   },
+  VUE: {
+    name: "Vue",
+    class: "bg-[#4fc08d] text-black",
+    icon: Vue,
+  },
 };
 const PROJECTS = [
+  {
+    title: "Pokemon Game",
+    description:
+      "¿Quién es ese Pokémon? es un proyecto sencillo desarrollado con Vue y JavaScript. Es un juego interactivo donde los usuarios deben adivinar el Pokémon basado en su silueta. Utiliza Vue para manejar la interactividad y actualización dinámica de la interfaz, ofreciendo una experiencia fluida y entretenida.",
+    link: "https://erick-hernandez-ortega.me/pokemon/",
+    github: "https://github.com/Erick-Hernandez-Ortega/Pokemon-Game-Vue",
+    image: "/projects/pokemon-vue.webp",
+    tags: [TAGS.JAVASCRIPT, TAGS.VUE, TAGS.HTML, TAGS.CSS],
+  },
   {
     title: "NDG",
     description:
